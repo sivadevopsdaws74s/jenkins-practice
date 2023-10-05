@@ -3,6 +3,9 @@ pipeline {
     options {
         timeout(time: 1, unit: 'HOURS') 
     }
+    triggers {
+        cron('* * * * *')
+    }
     environment { 
         USER = 'sivakumar'
     }
